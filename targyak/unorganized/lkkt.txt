@@ -1,0 +1,28 @@
+            Console.WriteLine("Kérek egy pozitív számot.");
+            int d = int.Parse(Console.ReadLine());
+            Console.WriteLine("Kérek egy másik pozitív számot.");
+            int e = int.Parse(Console.ReadLine());
+
+            if (d < e)
+            {
+                int eff = e;
+                e = d;
+                d = eff;
+            }
+            int szorzat3 = d * e;
+            int valami6 = 1;
+            int min = szorzat3;
+            int mini = 0;
+            while (szorzat3 > e)
+            {
+                if (szorzat3 % d == 0 && szorzat3 % e == 0)
+                {
+                    mini = szorzat3;
+                    if (mini < min)
+                    {
+                        min = mini;
+                    }
+                }
+                szorzat3--;
+            }
+            Console.WriteLine("A {0} és {1} legkisebb közös többszöröse: {2}",d,e,min);

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Cedarville+Cursive|Concert+One|Eczar|Fruktur|Kavoon|Neuton|Notable|Pacifico|Space+Mono|Tillana|Work+Sans');
+
+/*
+font-family: 'Notable', sans-serif;
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Space Mono', monospace;
+font-family: 'Concert One', cursive;
+font-family: 'Kavoon', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Tillana', cursive;
+font-family: 'Asul', sans-serif;
+font-family: 'Alike Angular', serif;
+font-family: 'Neuton', serif;
+font-family: 'Eczar', serif;
+*/
+
+#gap1 {
+    padding-top: 2%;
+}
+
+#gap2 {
+    padding-top: 5%;
+}
+
+#footer {
+    font-family: 'Roboto Light';
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(38, 166, 154, 1);
+    text-align: center;
+    height: 2.6%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
