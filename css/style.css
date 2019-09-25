@@ -1,39 +1,460 @@
-@import url('https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Cedarville+Cursive|Concert+One|Eczar|Fruktur|Kavoon|Neuton|Notable|Pacifico|Space+Mono|Tillana|Work+Sans');
-
-/*
-font-family: 'Notable', sans-serif;
-font-family: 'Cedarville Cursive', cursive;
-font-family: 'Pacifico', cursive;
-font-family: 'Work Sans', sans-serif;
-font-family: 'Space Mono', monospace;
-font-family: 'Concert One', cursive;
-font-family: 'Kavoon', cursive;
-font-family: 'Fruktur', cursive;
-font-family: 'Tillana', cursive;
-font-family: 'Asul', sans-serif;
-font-family: 'Alike Angular', serif;
-font-family: 'Neuton', serif;
-font-family: 'Eczar', serif;
-*/
-
-#gap1 {
-    padding-top: 2%;
+* {
+    --kex-dark: 33, 33, 33;
+    --kex-light: 213, 255, 249;
+    --kex-red: 175, 14, 14;
+    --kex-blue: 17, 152, 194;
+    --kex-green: 3, 168, 17;
+    --kex-yellow: 255, 233, 35;
+    --color-blue: 255, 233, 35
 }
 
-#gap2 {
-    padding-top: 5%;
+
+.gap {
+	margin-top: 4rem
 }
 
-#footer {
-    font-family: 'Roboto Light';
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(38, 166, 154, 1);
-    text-align: center;
-    height: 2.6%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.icon-block {
+	padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.card-content p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.card hr {
+	width: 92%;
+	border: solid 2px rgba(var(--kex-blue),.5);
+    border-radius: 2px;
+}
+
+  /* label color */
+  .input-field label {
+	color: rgb(236, 229, 164) !important;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+	color: rgb(255, 255, 255) !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* textarea underline focus color */
+  .input-field textarea:focus {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+	border-bottom: 1px solid #000 !important;
+	box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+	color: rgb(71, 74, 241) !important;
+  }
+
+@-webkit-keyframes anime1 {
+	0% {
+		width: 112px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	12.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	25% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	37.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	50% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	62.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	75% {
+		width: 48px;
+		height: 112px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	87.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	100% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+}
+
+@keyframes anime1 {
+	0% {
+		width: 112px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	12.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	25% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	37.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	50% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	62.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+
+	75% {
+		width: 48px;
+		height: 112px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	87.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	100% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+}
+
+@-webkit-keyframes anime2 {
+	0% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	12.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	25% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	37.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	50% {
+		width: 112px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	62.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	75% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	87.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	100% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+}
+
+@keyframes anime2 {
+	0% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	12.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	25% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	37.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	50% {
+		width: 112px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	62.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	75% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	87.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	100% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+}
+
+@-webkit-keyframes anime3 {
+	0% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	12.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	25% {
+		width: 48px;
+		height: 112px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	37.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	50% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	62.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	75% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	87.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	100% {
+		width: 112px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
+}
+
+@keyframes anime3 {
+	0% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	12.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	25% {
+		width: 48px;
+		height: 112px;
+		margin-top: 0px;
+		margin-left: 64px;
+	}
+
+	37.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	50% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	62.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	75% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	87.5% {
+		width: 48px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 64px;
+	}
+
+	100% {
+		width: 112px;
+		height: 48px;
+		margin-top: 64px;
+		margin-left: 0px;
+	}
 }

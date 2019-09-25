@@ -1,0 +1,20 @@
+Console.WriteLine("Add meg a fibonacci sorozat n-edik elemét");
+            int n = int.Parse(Console.ReadLine());
+            int nedikelem;
+            if (n == 0)
+            {
+                Console.WriteLine("A fibonnacci sorozat 0. eleme a 0");
+            }
+            else if (n < 0)
+            {
+                Console.WriteLine("Ez nem lehetséges.");
+            }
+            else
+            {
+                int valami7 = 1;
+                nedikelem = 0;
+                for (int id = 1; id <= n; id++)
+                {
+                    nedikelem = nedikelem + valami7;
+                }
+            }

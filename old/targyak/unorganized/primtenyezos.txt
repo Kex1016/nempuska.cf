@@ -1,0 +1,23 @@
+            Console.Write("Add meg a számot:");
+            int szam = int.Parse(Console.ReadLine());
+            Console.Clear();
+
+            //
+
+            int i = 2;
+
+            while(i <= szam)
+            {
+                if (szam % i == 0)
+                {
+                    szam = szam / i;
+                    Console.Write("{0}*",i);
+                }
+
+                else
+                {
+                    i++;
+                }
+            }
+
+            Console.ReadLine();
